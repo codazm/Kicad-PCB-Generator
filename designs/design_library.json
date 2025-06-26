@@ -1,0 +1,298 @@
+[
+  {
+    "id": "pedal_v1",
+    "title": "Guitar Overdrive Pedal (V1)",
+    "description": "Reference design for a compact through-hole overdrive pedal using JFET input stage and op-amp clipping.",
+    "schematic": "examples/circuits/pedal_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "through_hole"]
+  },
+  {
+    "id": "preamp_v1",
+    "title": "Hi-Fi Tube Pre-Amp (V1)",
+    "description": "Two-stage 12AX7 pre-amplifier with regulated B+ and relay-switched input selector.",
+    "schematic": "examples/circuits/preamp_v1.kicad_sch",
+    "pcb_profile": "preamp_v1",
+    "tags": ["audio", "hifi", "tube"]
+  },
+  {
+    "id": "boost_v1",
+    "title": "Classic Clean Boost (V1)",
+    "description": "MOSFET-based clean boost pedal with up to 20 dB gain.",
+    "schematic": "examples/circuits/boost_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "boost"]
+  },
+  {
+    "id": "fuzz_v1",
+    "title": "Vintage Fuzz Face Clone (V1)",
+    "description": "Germanium-transistor fuzz with bias trimmer and true-bypass.",
+    "schematic": "examples/circuits/fuzz_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "fuzz"]
+  },
+  {
+    "id": "delay_v1",
+    "title": "PT2399 Digital Delay (V1)",
+    "description": "Up to 600 ms delay using PT2399 chip, mix and repeats control.",
+    "schematic": "examples/circuits/delay_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "delay"]
+  },
+  {
+    "id": "chorus_v1",
+    "title": "BBD Chorus (V1)",
+    "description": "MN3207 bucket-brigade chorus with LFO rate/depth controls.",
+    "schematic": "examples/circuits/chorus_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "chorus"]
+  },
+  {
+    "id": "reverb_v1",
+    "title": "Belton Brick Reverb (V1)",
+    "description": "Digital reverb module implementation with mix control.",
+    "schematic": "examples/circuits/reverb_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "reverb"]
+  },
+  {
+    "id": "compressor_v1",
+    "title": "Optical Compressor (V1)",
+    "description": "LED/LDR cell compressor with threshold and sustain controls.",
+    "schematic": "examples/circuits/compressor_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "compressor"]
+  },
+  {
+    "id": "tremolo_v1",
+    "title": "JFET Tremolo (V1)",
+    "description": "Amplitude-modulation tremolo using JFET as variable resistor.",
+    "schematic": "examples/circuits/tremolo_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "tremolo"]
+  },
+  {
+    "id": "phaser_v1",
+    "title": "4-Stage OTA Phaser (V1)",
+    "description": "LM13700-based variable-phase network with feedback resonance.",
+    "schematic": "examples/circuits/phaser_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "phaser"]
+  },
+  {
+    "id": "eq_v1",
+    "title": "6-Band Graphic EQ (V1)",
+    "description": "Gyrator-based active equaliser covering 100 Hz–3.2 kHz.",
+    "schematic": "examples/circuits/eq_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "eq"]
+  },
+  {
+    "id": "buffer_v1",
+    "title": "JFET Buffer (V1)",
+    "description": "Low-noise input buffer with unity gain and high input impedance.",
+    "schematic": "examples/circuits/buffer_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "buffer"]
+  },
+  {
+    "id": "ringmod_v1",
+    "title": "Diode Ring Modulator (V1)",
+    "description": "Classic four-diode ring modulator with carrier oscillator and mix control.",
+    "schematic": "examples/circuits/ringmod_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "ring_mod"]
+  },
+  {
+    "id": "analog_delay_v1",
+    "title": "MN3005 Analog Delay (V1)",
+    "description": "320 ms vintage analog delay with MN3005 BBD and compander noise reduction.",
+    "schematic": "examples/circuits/analog_delay_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "delay", "analog"]
+  },
+  {
+    "id": "spring_reverb_v1",
+    "title": "Spring Reverb Driver (V1)",
+    "description": "Accutronics tank driver and recovery amplifier with tilt EQ.",
+    "schematic": "examples/circuits/spring_reverb_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "reverb", "spring"]
+  },
+  {
+    "id": "octave_down_v1",
+    "title": "CMOS Octave Down (V1)",
+    "description": "CD4013 flip-flop octave divider with clean blend control.",
+    "schematic": "examples/circuits/octave_down_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "pedal", "octave"]
+  },
+  {
+    "id": "cab_sim_v1",
+    "title": "Analog Cab Simulator (V1)",
+    "description": "Multi-band gyrator network emulating 4×12 cabinet frequency response.",
+    "schematic": "examples/circuits/cab_sim_v1.kicad_sch",
+    "pcb_profile": "pedal_v1",
+    "tags": ["audio", "guitar", "utility", "cab_sim"]
+  },
+  {
+    "id": "vco_basic_v1",
+    "title": "VCO – Basic Saw/Square (V1)",
+    "description": "Temperature-compensated exponential VCO core (CEM3340) with sync and PWM.",
+    "schematic": "examples/circuits/vco_basic_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "vco", "oscillator"]
+  },
+  {
+    "id": "vcf_ladder_v1",
+    "title": "VCF – Moog Ladder 24 dB (V1)",
+    "description": "Discrete transistor ladder low-pass VCF with resonance control.",
+    "schematic": "examples/circuits/vcf_ladder_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "vcf", "filter"]
+  },
+  {
+    "id": "vca_linexp_v1",
+    "title": "VCA – Linear/Expo (V1)",
+    "description": "Dual THAT2180/LM13700 OTA VCA with switchable response curve.",
+    "schematic": "examples/circuits/vca_linexp_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "vca"]
+  },
+  {
+    "id": "adsr_v1",
+    "title": "Envelope Generator – ADSR (V1)",
+    "description": "Analog ADSR with loop mode and voltage control over each segment.",
+    "schematic": "examples/circuits/adsr_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "envelope", "adsr"]
+  },
+  {
+    "id": "lfo_quad_v1",
+    "title": "Quad LFO (V1)",
+    "description": "Four independent triangle/square LFOs with sync and CV input.",
+    "schematic": "examples/circuits/lfo_quad_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "lfo"]
+  },
+  {
+    "id": "snh_noise_v1",
+    "title": "Sample & Hold + Noise (V1)",
+    "description": "White/pink noise source with 4016 S&H clocked by external trigger.",
+    "schematic": "examples/circuits/snh_noise_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "sample_hold", "noise"]
+  },
+  {
+    "id": "sequencer_8step_v1",
+    "title": "Sequencer – 8-Step (V1)",
+    "description": "Analog 8-step CV sequencer with gate output and clock input.",
+    "schematic": "examples/circuits/sequencer_8step_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "sequencer"]
+  },
+  {
+    "id": "ringmod_linear_v1",
+    "title": "Ring Modulator – Linear (V1)",
+    "description": "Four-quadrant Gilbert cell ring modulator for clean linear modulation.",
+    "schematic": "examples/circuits/ringmod_linear_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "ring_mod"]
+  },
+  {
+    "id": "delay_bbd_analog_v1",
+    "title": "Analog BBD Delay 4096-Stage (V1)",
+    "description": "MN3208/3207 based delay module with voltage-controlled clock.",
+    "schematic": "examples/circuits/delay_bbd_analog_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "delay", "analog"]
+  },
+  {
+    "id": "lpg_vactrol_v1",
+    "title": "Low-Pass Gate – Vactrol (V1)",
+    "description": "Dual vactrol low-pass gate in resonant & non-resonant modes.",
+    "schematic": "examples/circuits/lpg_vactrol_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "lpg"]
+  },
+  {
+    "id": "wavefolder_serge_v1",
+    "title": "Wavefolder – Serge Style (V1)",
+    "description": "Bipolar JFET-based wavefolder with symmetry and drive controls.",
+    "schematic": "examples/circuits/wavefolder_serge_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "wavefolder"]
+  },
+  {
+    "id": "clock_divider_cascade_v1",
+    "title": "Clock Divider – Cascade (V1)",
+    "description": "CD4017/4024 divider generating /2 to /32 gate outputs.",
+    "schematic": "examples/circuits/clock_divider_cascade_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "clock", "divider"]
+  },
+  {
+    "id": "logic_boolean_v1",
+    "title": "Logic – Dual Boolean (V1)",
+    "description": "Dual-input AND/OR/XOR logic module with diode-based and CMOS options.",
+    "schematic": "examples/circuits/logic_boolean_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "logic"]
+  },
+  {
+    "id": "quantizer_semi_v1",
+    "title": "Quantizer – Semitone (V1)",
+    "description": "ADC/DAC based CV quantizer locking pitch to 12-TET semitones.",
+    "schematic": "examples/circuits/quantizer_semi_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "quantizer"]
+  },
+  {
+    "id": "mixer_lin4_v1",
+    "title": "Mixer – 4-Channel Linear (V1)",
+    "description": "AC-coupled op-amp mixer with unity gain and summed output.",
+    "schematic": "examples/circuits/mixer_lin4_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "mixer"]
+  },
+  {
+    "id": "attenuverter_dual_v1",
+    "title": "Attenuverter – Dual (V1)",
+    "description": "Two channels of bi-polar CV attenuation/inversion with offset.",
+    "schematic": "examples/circuits/attenuverter_dual_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "attenuverter"]
+  },
+  {
+    "id": "slew_limiter_dual_v1",
+    "title": "Slew Limiter – Dual (V1)",
+    "description": "Twin slew limiter with independent rise/fall control per channel.",
+    "schematic": "examples/circuits/slew_limiter_dual_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "slew_limiter"]
+  },
+  {
+    "id": "random_source_ssg_v1",
+    "title": "Random Source – SSG (V1)",
+    "description": "Stepped and smooth random voltage generator inspired by Serge SSG.",
+    "schematic": "examples/circuits/random_source_ssg_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "random"]
+  },
+  {
+    "id": "mult_buffered_v1",
+    "title": "Multiple – Buffered (V1)",
+    "description": "Unity-gain op-amp buffered 1-to-4 CV/audio mult for signal integrity.",
+    "schematic": "examples/circuits/mult_buffered_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "mult"]
+  },
+  {
+    "id": "switch_sequential_v1",
+    "title": "Switch – 4-Step Sequential (V1)",
+    "description": "CD4017 driven rotary sequential switch with manual advance.",
+    "schematic": "examples/circuits/switch_sequential_v1.kicad_sch",
+    "pcb_profile": "modular_3u",
+    "tags": ["synth", "eurorack", "switch"]
+  }
+] 
