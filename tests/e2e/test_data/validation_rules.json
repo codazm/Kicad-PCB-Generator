@@ -1,0 +1,99 @@
+{
+    "validation": {
+        "enabled": true,
+        "rules": {
+            "components": {
+                "enabled": true,
+                "min_clearance": 0.2,
+                "max_clearance": 10.0,
+                "min_size": 0.8,
+                "max_size": 50.0,
+                "allowed_layers": ["F.Cu", "B.Cu"]
+            },
+            "connections": {
+                "enabled": true,
+                "min_trace_width": 0.2,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.2,
+                "max_clearance": 10.0,
+                "min_via_size": 0.4,
+                "max_via_size": 2.0,
+                "min_via_drill": 0.3,
+                "max_via_drill": 1.0
+            },
+            "power": {
+                "enabled": true,
+                "required_nets": ["+12V", "-12V", "GND"],
+                "min_trace_width": 0.5,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.5,
+                "max_clearance": 10.0
+            },
+            "ground": {
+                "enabled": true,
+                "required_nets": ["GND"],
+                "min_trace_width": 0.5,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.5,
+                "max_clearance": 10.0,
+                "require_ground_plane": true,
+                "min_ground_plane_clearance": 0.5
+            },
+            "signal": {
+                "enabled": true,
+                "min_trace_width": 0.2,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.2,
+                "max_clearance": 10.0,
+                "min_via_size": 0.4,
+                "max_via_size": 2.0,
+                "min_via_drill": 0.3,
+                "max_via_drill": 1.0
+            },
+            "audio": {
+                "enabled": true,
+                "min_trace_width": 0.3,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.3,
+                "max_clearance": 10.0,
+                "min_via_size": 0.4,
+                "max_via_size": 2.0,
+                "min_via_drill": 0.3,
+                "max_via_drill": 1.0,
+                "require_ground_plane": true,
+                "min_ground_plane_clearance": 0.3
+            },
+            "manufacturing": {
+                "enabled": true,
+                "min_trace_width": 0.2,
+                "max_trace_width": 5.0,
+                "min_clearance": 0.2,
+                "max_clearance": 10.0,
+                "min_via_size": 0.4,
+                "max_via_size": 2.0,
+                "min_via_drill": 0.3,
+                "max_via_drill": 1.0,
+                "min_pad_size": 1.0,
+                "max_pad_size": 10.0,
+                "min_pad_drill": 0.4,
+                "max_pad_drill": 5.0,
+                "min_text_size": 1.0,
+                "max_text_size": 10.0,
+                "min_text_width": 0.15,
+                "max_text_width": 1.0,
+                "min_solder_mask_clearance": 0.05,
+                "max_solder_mask_clearance": 0.5,
+                "min_solder_mask_width": 0.25,
+                "max_solder_mask_width": 1.0,
+                "min_zone_clearance": 0.5,
+                "max_zone_clearance": 10.0,
+                "min_zone_thickness": 0.254,
+                "max_zone_thickness": 5.0,
+                "min_thermal_gap": 0.5,
+                "max_thermal_gap": 2.0,
+                "min_thermal_bridge": 0.5,
+                "max_thermal_bridge": 2.0
+            }
+        }
+    }
+} 

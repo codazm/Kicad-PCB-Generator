@@ -1,0 +1,201 @@
+(kicad_pcb (version 20211123) (generator pcbnew)
+
+  (paper "A4")
+  (title "Invalid Manufacturing PCB")
+  (date "2024-03-20")
+  (rev "1.0")
+  (company "Test Company")
+  (host pcbnew "7.0.0")
+
+  (general
+    (thickness 1.6)
+    (drawings 0)
+    (tracks 0)
+    (zones 0)
+    (modules 0)
+    (nets 0)
+  )
+
+  (page "A4")
+  (layers
+    (0 "F.Cu" signal)
+    (1 "In1.Cu" signal)
+    (2 "In2.Cu" signal)
+    (3 "B.Cu" signal)
+    (4 "F.Adhes" user)
+    (5 "B.Adhes" user)
+    (6 "F.Paste" user)
+    (7 "B.Paste" user)
+    (8 "F.SilkS" user)
+    (9 "B.SilkS" user)
+    (10 "F.Mask" user)
+    (11 "B.Mask" user)
+    (12 "Edge.Cuts" user)
+    (13 "Eco1.User" user)
+    (14 "Eco2.User" user)
+    (15 "Margin" user)
+    (16 "F.CrtYd" user)
+    (17 "B.CrtYd" user)
+    (18 "F.Fab" user)
+    (19 "B.Fab" user)
+  )
+
+  (setup
+    (last_trace_width 0.1) ; Too thin for manufacturing
+    (trace_clearance 0.1) ; Too small for manufacturing
+    (zone_clearance 0.2) ; Too small for manufacturing
+    (zone_45_only no)
+    (trace_min 0.1) ; Too small for manufacturing
+    (segment_width 0.1) ; Too small for manufacturing
+    (edge_width 0.1)
+    (via_size 0.3) ; Too small for manufacturing
+    (via_drill 0.2) ; Too small for manufacturing
+    (via_min_size 0.3) ; Too small for manufacturing
+    (via_min_drill 0.2) ; Too small for manufacturing
+    (uvia_size 0.2) ; Too small for manufacturing
+    (uvia_drill 0.1) ; Too small for manufacturing
+    (uvias_allowed no)
+    (uvia_min_size 0.2) ; Too small for manufacturing
+    (uvia_min_drill 0.1) ; Too small for manufacturing
+    (pcb_text_width 0.1) ; Too small for manufacturing
+    (pcb_text_size 0.5 0.5) ; Too small for manufacturing
+    (mod_edge_width 0.1) ; Too small for manufacturing
+    (mod_text_size 0.5 0.5) ; Too small for manufacturing
+    (mod_text_width 0.1) ; Too small for manufacturing
+    (pad_size 0.8 0.8) ; Too small for manufacturing
+    (pad_drill 0.3) ; Too small for manufacturing
+    (pad_to_mask_clearance 0.025) ; Too small for manufacturing
+    (solder_mask_min_width 0.1) ; Too small for manufacturing
+    (aux_axis_origin 0 0)
+    (visible_elements "FFFFFF7F")
+    (pcbplotparams
+      (layerselection 0x00010_80000001)
+      (usegerberextensions false)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
+      (excludeedgelayer true)
+      (linewidth 0.100000)
+      (plotframeref false)
+      (viasonmask false)
+      (mode 1)
+      (useauxorigin false)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (hpglpenoverlay 2)
+      (psnegative false)
+      (psa4output false)
+      (plotreference true)
+      (plotvalue true)
+      (plotinvisibletext false)
+      (padsonsilk false)
+      (subtractmaskfromsilk false)
+      (outputformat 1)
+      (mirror false)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory ""))
+  )
+
+  (net 0 "")
+  (net 1 "GND")
+  (net 2 "+12V")
+  (net 3 "-12V")
+  (net 4 "AUDIO_IN")
+  (net 5 "AUDIO_OUT")
+
+  (net_class Default "This is the default net class."
+    (clearance 0.1) ; Too small for manufacturing
+    (trace_width 0.1) ; Too small for manufacturing
+    (via_dia 0.3) ; Too small for manufacturing
+    (via_drill 0.2) ; Too small for manufacturing
+    (uvia_dia 0.2) ; Too small for manufacturing
+    (uvia_drill 0.1) ; Too small for manufacturing
+    (add_net "GND")
+    (add_net "+12V")
+    (add_net "-12V")
+    (add_net "AUDIO_IN")
+    (add_net "AUDIO_OUT")
+  )
+
+  (module "Audio_Input" (layer F.Cu) (tedit 5F7A3F0F)
+    (at 50 50 0)
+    (descr "Audio Input Connector")
+    (tags "audio input")
+    (path "/5F7A3F0F")
+    (fp_text reference "J1" (at 0 -3.81 0) (layer F.SilkS)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_text value "Audio_Input" (at 0 3.81 0) (layer F.Fab)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_line (start -2.54 -2.54) (end 2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 -2.54) (end 2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 2.54) (end -2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -2.54 2.54) (end -2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (pad 1 thru_hole circle (at -1.27 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 4 "AUDIO_IN")) ; Too small for manufacturing
+    (pad 2 thru_hole circle (at 1.27 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 1 "GND")) ; Too small for manufacturing
+  )
+
+  (module "Audio_Output" (layer F.Cu) (tedit 5F7A3F0F)
+    (at 150 50 0)
+    (descr "Audio Output Connector")
+    (tags "audio output")
+    (path "/5F7A3F0F")
+    (fp_text reference "J2" (at 0 -3.81 0) (layer F.SilkS)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_text value "Audio_Output" (at 0 3.81 0) (layer F.Fab)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_line (start -2.54 -2.54) (end 2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 -2.54) (end 2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 2.54) (end -2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -2.54 2.54) (end -2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (pad 1 thru_hole circle (at -1.27 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 5 "AUDIO_OUT")) ; Too small for manufacturing
+    (pad 2 thru_hole circle (at 1.27 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 1 "GND")) ; Too small for manufacturing
+  )
+
+  (module "Power_Connector" (layer F.Cu) (tedit 5F7A3F0F)
+    (at 100 150 0)
+    (descr "Power Connector")
+    (tags "power")
+    (path "/5F7A3F0F")
+    (fp_text reference "J3" (at 0 -3.81 0) (layer F.SilkS)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_text value "Power_Connector" (at 0 3.81 0) (layer F.Fab)
+      (effects (font (size 0.5 0.5) (thickness 0.1))) ; Too small for manufacturing
+    )
+    (fp_line (start -2.54 -2.54) (end 2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 -2.54) (end 2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 2.54 2.54) (end -2.54 2.54) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -2.54 2.54) (end -2.54 -2.54) (layer F.CrtYd) (width 0.05))
+    (pad 1 thru_hole circle (at -2.54 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 2 "+12V")) ; Too small for manufacturing
+    (pad 2 thru_hole circle (at 0 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 1 "GND")) ; Too small for manufacturing
+    (pad 3 thru_hole circle (at 2.54 0 0) (size 0.8 0.8) (drill 0.3) (layers *.Cu *.Mask) (net 3 "-12V")) ; Too small for manufacturing
+  )
+
+  (segment (start 50 50) (end 100 50) (width 0.1) (layer F.Cu) (net 4 "AUDIO_IN")) ; Too thin for manufacturing
+  (segment (start 100 50) (end 150 50) (width 0.1) (layer F.Cu) (net 5 "AUDIO_OUT")) ; Too thin for manufacturing
+  (segment (start 100 50) (end 100 150) (width 0.1) (layer F.Cu) (net 1 "GND")) ; Too thin for manufacturing
+  (segment (start 100 150) (end 77.46 150) (width 0.1) (layer F.Cu) (net 2 "+12V")) ; Too thin for manufacturing
+  (segment (start 100 150) (end 122.54 150) (width 0.1) (layer F.Cu) (net 3 "-12V")) ; Too thin for manufacturing
+
+  (zone (net 1) (net_name "GND") (layer F.Cu) (tstamp 5F7A3F0F) (hatch edge 0.2) ; Too small for manufacturing
+    (connect_pads (clearance 0.1)) ; Too small for manufacturing
+    (min_thickness 0.1) ; Too small for manufacturing
+    (fill (thermal_gap 0.2) (thermal_bridge 0.2)) ; Too small for manufacturing
+    (polygon
+      (pts
+        (xy 0 0) (xy 200 0) (xy 200 200) (xy 0 200)
+      )
+    )
+  )
+
+  (gr_line (start 0 0) (end 200 0) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 200 0) (end 200 200) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 200 200) (end 0 200) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 0 200) (end 0 0) (angle 90) (layer Edge.Cuts) (width 0.1))
+) 
