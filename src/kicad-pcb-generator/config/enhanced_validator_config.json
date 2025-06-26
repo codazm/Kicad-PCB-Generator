@@ -1,0 +1,59 @@
+{
+  "enhanced_validator": {
+    "thermal": {
+      "max_power_dissipation": 1.0,
+      "thermal_relief_required": true,
+      "min_thermal_pad_size": 2.0,
+      "max_temperature_rise": 20.0,
+      "thermal_resistance_factor": 0.1,
+      "description": "Thermal validation parameters"
+    },
+    "cross_layer": {
+      "require_via_transitions": true,
+      "check_layer_consistency": true,
+      "max_layer_transitions": 4,
+      "via_clearance": 0.2,
+      "description": "Cross-layer validation parameters"
+    },
+    "signal_integrity": {
+      "high_speed_keywords": ["CLK", "DDR", "USB", "HDMI"],
+      "min_high_speed_width": 0.2,
+      "max_impedance_mismatch": 0.1,
+      "max_crosstalk": 0.01,
+      "max_reflection": 0.1,
+      "min_clearance": 0.2,
+      "description": "Signal integrity validation parameters"
+    },
+    "power_distribution": {
+      "power_net_keywords": ["PWR", "VCC", "VDD", "VSS", "GND"],
+      "min_power_track_width": 0.5,
+      "max_voltage_drop": 0.1,
+      "min_power_plane_coverage": 0.8,
+      "require_power_connections": true,
+      "description": "Power distribution validation parameters"
+    },
+    "validation": {
+      "check_thermal": true,
+      "check_cross_layer": true,
+      "check_signal_integrity": true,
+      "check_power_distribution": true,
+      "description": "Enhanced validation settings"
+    },
+    "thresholds": {
+      "warning_severity": 0.7,
+      "error_severity": 0.9,
+      "info_severity": 0.3,
+      "critical_severity": 0.95,
+      "description": "Enhanced validation severity thresholds"
+    },
+    "units": {
+      "distance": "mm",
+      "power": "watts",
+      "temperature": "celsius",
+      "voltage": "volts",
+      "current": "amperes",
+      "impedance": "ohms",
+      "description": "Enhanced validation units"
+    }
+  }
+} 

@@ -1,0 +1,125 @@
+{
+  "analysis_manager": {
+    "signal_integrity": {
+      "min_track_width": 0.2,
+      "max_track_length": 100.0,
+      "max_track_angle": 45.0,
+      "min_clearance": 0.2,
+      "max_impedance_mismatch": 0.1,
+      "max_crosstalk": 0.01,
+      "max_reflection": 0.1,
+      "description": "Signal integrity analysis parameters"
+    },
+    "thermal": {
+      "min_thermal_pad_size": 2.0,
+      "max_component_density_radius": 5.0,
+      "max_nearby_components": 3,
+      "thermal_pad_threshold": 2e6,
+      "high_density_threshold": 0.1,
+      "max_temperature_rise": 20.0,
+      "thermal_resistance_factor": 0.1,
+      "description": "Thermal analysis parameters"
+    },
+    "emi": {
+      "max_parallel_length": 50.0,
+      "max_track_angle": 45.0,
+      "min_isolation_distance": 2.0,
+      "max_emission_level": 0.01,
+      "max_susceptibility": 0.1,
+      "shielding_effectiveness": 0.9,
+      "description": "EMI analysis parameters"
+    },
+    "power_distribution": {
+      "min_power_track_width": 0.5,
+      "max_voltage_drop": 0.1,
+      "min_power_plane_coverage": 0.8,
+      "max_current_density": 10.0,
+      "power_net_prefixes": ["VCC", "VDD", "VSS", "GND"],
+      "high_current_threshold": 1.0,
+      "description": "Power distribution analysis parameters"
+    },
+    "audio_performance": {
+      "min_snr": 60.0,
+      "max_noise_floor": -80.0,
+      "max_distortion": 0.01,
+      "min_bandwidth": 20.0,
+      "max_bandwidth": 80000.0,
+      "max_phase_shift": 5.0,
+      "min_impedance": 100.0,
+      "max_impedance": 10000.0,
+      "high_precision_analysis": true,
+      "extended_frequency_analysis": true,
+      "description": "Audio performance analysis parameters for high-precision audio up to 80kHz"
+    },
+    "noise_analysis": {
+      "default_signal_level": 1.0,
+      "thermal_noise_factor": 0.1,
+      "crosstalk_threshold": 0.01,
+      "power_supply_noise_factor": 0.05,
+      "ground_noise_factor": 0.02,
+      "min_distance_threshold": 2.0,
+      "high_frequency_noise_analysis": true,
+      "description": "Noise analysis parameters"
+    },
+    "frequency_response": {
+      "min_frequency": 20.0,
+      "max_frequency": 80000.0,
+      "frequency_step": 50.0,
+      "min_response_flatness": 0.95,
+      "max_phase_variation": 5.0,
+      "min_bandwidth_efficiency": 0.9,
+      "high_precision_mode": true,
+      "extended_bandwidth_analysis": true,
+      "description": "Frequency response analysis parameters for high-precision audio up to 80kHz"
+    },
+    "ai_analysis": {
+      "feature_weights": {
+        "thermal": 0.3,
+        "signal_integrity": 0.3,
+        "power": 0.2,
+        "audio": 0.2
+      },
+      "recommendation_threshold": 0.7,
+      "analysis_depth": 3,
+      "description": "AI analysis parameters"
+    },
+    "cost_analysis": {
+      "cost_threshold": 100.0,
+      "yield_impact_threshold": 0.05,
+      "sensitive_area_radius": 5.0,
+      "min_component_spacing": 0.5,
+      "description": "Cost analysis parameters"
+    },
+    "validation": {
+      "check_signal_integrity": true,
+      "check_thermal": true,
+      "check_emi": true,
+      "check_power_distribution": true,
+      "check_audio_performance": true,
+      "check_noise": true,
+      "check_frequency_response": true,
+      "check_ai_analysis": true,
+      "check_cost_analysis": true,
+      "description": "Analysis validation settings"
+    },
+    "thresholds": {
+      "warning_severity": 0.7,
+      "error_severity": 0.9,
+      "info_severity": 0.3,
+      "critical_severity": 0.95,
+      "description": "Analysis severity thresholds"
+    },
+    "units": {
+      "distance": "mm",
+      "angle": "degrees",
+      "temperature": "celsius",
+      "voltage": "volts",
+      "current": "amperes",
+      "power": "watts",
+      "frequency": "hertz",
+      "impedance": "ohms",
+      "cost": "USD",
+      "description": "Analysis units"
+    }
+  }
+} 

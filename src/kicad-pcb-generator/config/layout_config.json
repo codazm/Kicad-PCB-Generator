@@ -1,0 +1,233 @@
+{
+  "layout": {
+    "board_setup": {
+      "default_thickness": 1.6,
+      "default_copper_weight": 1,
+      "enabled_layers": [
+        "F_Cu",
+        "B_Cu", 
+        "In1_Cu",
+        "In2_Cu",
+        "F_SilkS",
+        "B_SilkS",
+        "Edge_Cuts"
+      ],
+      "description": "Board setup parameters"
+    },
+    "placement": {
+      "margin_percentage": 0.1,
+      "center_spacing_percentage": 0.2,
+      "component_offset_percentage": 0.02,
+      "grid_spacing_percentage": 0.02,
+      "power_margin_multiplier": 2.0,
+      "description": "Component placement parameters"
+    },
+    "component_groups": {
+      "opamps": {
+        "prefixes": ["OPA"],
+        "placement_zone": "center",
+        "spacing_percentage": 0.2,
+        "priority": 1,
+        "thermal_consideration": true,
+        "description": "Opamp component group"
+      },
+      "connectors": {
+        "prefixes": ["AUDIO", "POWER"],
+        "placement_zone": "edges",
+        "spacing_percentage": 0.2,
+        "priority": 2,
+        "thermal_consideration": false,
+        "description": "Connector component group"
+      },
+      "passives": {
+        "prefixes": ["R", "C", "L"],
+        "placement_zone": "near_opamps",
+        "spacing_percentage": 0.02,
+        "priority": 3,
+        "thermal_consideration": false,
+        "description": "Passive component group"
+      },
+      "power": {
+        "prefixes": ["POWER"],
+        "placement_zone": "top",
+        "spacing_percentage": 0.2,
+        "priority": 1,
+        "thermal_consideration": true,
+        "description": "Power component group"
+      }
+    },
+    "stability_components": {
+      "ferrite_beads": {
+        "fb1": {
+          "reference": "FB1",
+          "impedance": 100.0,
+          "current_rating": 1.0,
+          "description": "Main power ferrite bead"
+        },
+        "fb2": {
+          "reference": "FB2", 
+          "impedance": 100.0,
+          "current_rating": 0.5,
+          "description": "Analog power ferrite bead"
+        }
+      },
+      "emc_filters": {
+        "emc1": {
+          "reference": "EMC1",
+          "type": "emi",
+          "cutoff_freq": 1000000.0,
+          "order": 2,
+          "attenuation": -40.0,
+          "description": "Input EMC filter"
+        },
+        "emc2": {
+          "reference": "EMC2",
+          "type": "emi", 
+          "cutoff_freq": 1000000.0,
+          "order": 2,
+          "attenuation": -40.0,
+          "description": "Output EMC filter"
+        }
+      },
+      "power_filters": {
+        "c1": {
+          "reference": "C1",
+          "capacitance": 10.0,
+          "voltage_rating": 16.0,
+          "description": "Main power filter"
+        },
+        "c2": {
+          "reference": "C2",
+          "capacitance": 1.0,
+          "voltage_rating": 16.0,
+          "description": "Analog power filter"
+        }
+      },
+      "audio_filters": {
+        "af1": {
+          "reference": "AF1",
+          "type": "low_pass",
+          "cutoff_freq": 20000.0,
+          "order": 2,
+          "ripple": 0.1,
+          "description": "Input audio filter"
+        },
+        "af2": {
+          "reference": "AF2",
+          "type": "low_pass",
+          "cutoff_freq": 20000.0,
+          "order": 2,
+          "ripple": 0.1,
+          "description": "Output audio filter"
+        }
+      }
+    },
+    "placement_zones": {
+      "ferrite": {
+        "x_percentage": 0.1,
+        "y_percentage": 0.1,
+        "description": "Ferrite bead placement zone"
+      },
+      "emc_filter": {
+        "x_percentage": 0.9,
+        "y_percentage": 0.1,
+        "description": "EMC filter placement zone"
+      },
+      "capacitor": {
+        "x_percentage": 0.2,
+        "y_percentage": 0.1,
+        "description": "Power filter capacitor placement zone"
+      },
+      "audio_filter": {
+        "x_percentage": 0.5,
+        "y_percentage": 0.5,
+        "description": "Audio filter placement zone"
+      }
+    },
+    "routing": {
+      "min_track_width": 0.2,
+      "min_clearance": 0.2,
+      "via_diameter": 0.4,
+      "via_drill": 0.2,
+      "min_track_spacing": 0.2,
+      "max_track_length": 100.0,
+      "via_preference": 0.5,
+      "layer_preference": {
+        "signal": ["F_Cu", "B_Cu"],
+        "power": ["In1_Cu", "In2_Cu"],
+        "ground": ["In1_Cu", "In2_Cu"]
+      },
+      "description": "Routing parameters"
+    },
+    "validation": {
+      "check_component_placement": true,
+      "check_stability_components": true,
+      "check_routing": true,
+      "check_power_planes": true,
+      "check_ground_planes": true,
+      "check_constraints": true,
+      "check_thermal": true,
+      "check_signal_integrity": true,
+      "description": "Layout validation settings"
+    }
+  },
+  "optimization": {
+    "constraints": {
+      "min_track_width": 0.2,
+      "min_clearance": 0.2,
+      "min_via_size": 0.4,
+      "max_component_density": 0.1,
+      "max_track_density": 0.2,
+      "min_thermal_pad_size": 1.0,
+      "max_parallel_tracks": 3,
+      "min_power_track_width": 0.5,
+      "max_high_speed_length": 50.0,
+      "description": "Layout optimization constraints"
+    },
+    "optimization": {
+      "max_iterations": 1000,
+      "convergence_threshold": 0.001,
+      "improvement_threshold": 0.01,
+      "cache_size": 1000,
+      "memoization_cache_size": 500,
+      "position_evaluation_cache_size": 200,
+      "description": "Optimization algorithm parameters"
+    },
+    "component_placement": {
+      "margin_percentage": 0.1,
+      "spacing_percentage": 0.2,
+      "group_spacing_percentage": 0.3,
+      "thermal_zone_margin": 0.05,
+      "power_zone_margin": 0.1,
+      "signal_zone_margin": 0.02,
+      "description": "Component placement optimization parameters"
+    },
+    "thermal_management": {
+      "max_temperature_rise": 20.0,
+      "thermal_resistance_factor": 0.8,
+      "heat_dissipation_threshold": 1.0,
+      "thermal_pad_spacing": 0.5,
+      "thermal_via_count": 4,
+      "description": "Thermal management parameters"
+    },
+    "signal_integrity": {
+      "max_crosstalk": -40.0,
+      "max_reflection": -20.0,
+      "impedance_tolerance": 0.1,
+      "max_parallel_length": 10.0,
+      "min_isolation_distance": 2.0,
+      "description": "Signal integrity parameters"
+    },
+    "ai_analysis": {
+      "feature_weights": {
+        "thermal": 0.3,
+        "signal_integrity": 0.3,
+        "routing": 0.2,
+        "placement": 0.2
+      },
+      "recommendation_threshold": 0.7,
+      "analysis_depth": 3,
+      "description": "AI analysis parameters"
+    }
+  }
+} 

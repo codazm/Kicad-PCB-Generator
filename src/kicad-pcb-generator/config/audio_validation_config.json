@@ -1,0 +1,95 @@
+{
+  "audio_validation": {
+    "frequency_response": {
+      "min_frequency": 20.0,
+      "max_frequency": 20000.0,
+      "min_response_flatness": 0.95,
+      "max_phase_variation": 5.0,
+      "description": "Frequency response validation parameters for audio circuits"
+    },
+    "signal_paths": {
+      "min_signal_path_length": 0.1,
+      "max_signal_path_length": 100.0,
+      "min_signal_path_width": 0.2,
+      "max_signal_path_width": 2.0,
+      "prefer_direct_paths": true,
+      "max_path_angle": 45.0,
+      "min_path_clearance": 0.3,
+      "max_path_impedance": 100.0,
+      "min_path_impedance": 50.0,
+      "description": "Signal path validation parameters for audio routing"
+    },
+    "power_supply": {
+      "min_voltage_regulation": 0.98,
+      "max_voltage_ripple": 0.01,
+      "min_power_supply_rejection": 60.0,
+      "max_load_regulation": 0.02,
+      "min_line_regulation": 0.01,
+      "max_transient_response": 0.1,
+      "min_efficiency": 0.85,
+      "description": "Power supply validation parameters for audio circuits"
+    },
+    "grounding": {
+      "min_ground_connection_count": 4,
+      "max_ground_loop_area": 10.0,
+      "min_ground_plane_coverage": 0.7,
+      "prefer_star_grounding": true,
+      "max_ground_impedance": 0.1,
+      "min_ground_clearance": 0.5,
+      "description": "Grounding validation parameters for audio circuits"
+    },
+    "thermal": {
+      "max_temperature_rise": 25.0,
+      "min_thermal_pad_size": 2.0,
+      "max_component_density": 0.8,
+      "thermal_resistance_factor": 0.5,
+      "min_thermal_via_count": 4,
+      "description": "Thermal validation parameters for audio circuits"
+    },
+    "emi": {
+      "max_emission_level": -40.0,
+      "max_susceptibility": -60.0,
+      "min_shielding_effectiveness": 0.9,
+      "max_crosstalk": -60.0,
+      "min_isolation_distance": 5.0,
+      "description": "EMI/EMC validation parameters for audio circuits"
+    },
+    "manufacturing": {
+      "min_hole_size": 0.3,
+      "cost_threshold": 50.0,
+      "yield_impact_threshold": 0.1,
+      "sensitive_area_radius": 2.0,
+      "min_component_spacing": 0.5,
+      "description": "Manufacturing validation parameters for audio circuits"
+    },
+    "validation": {
+      "check_frequency_response": true,
+      "check_signal_paths": true,
+      "check_power_supply": true,
+      "check_grounding": true,
+      "check_thermal": true,
+      "check_emi": true,
+      "check_manufacturing": true,
+      "description": "Audio validation check settings"
+    },
+    "thresholds": {
+      "warning_severity": 0.3,
+      "error_severity": 0.7,
+      "info_severity": 0.1,
+      "critical_severity": 0.9,
+      "description": "Audio validation severity thresholds"
+    },
+    "units": {
+      "distance": "mm",
+      "frequency": "Hz",
+      "voltage": "V",
+      "current": "A",
+      "power": "W",
+      "temperature": "°C",
+      "impedance": "Ω",
+      "cost": "$",
+      "description": "Audio validation units"
+    },
+    "description": "Unified audio validation configuration for all audio circuit validation parameters"
+  }
+} 

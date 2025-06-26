@@ -1,0 +1,77 @@
+{
+  "audio_analysis": {
+    "thermal_analysis": {
+      "default_ambient_temperature": 25.0,
+      "default_board_material": "FR4",
+      "default_board_thickness": 1.6,
+      "max_temperature_rise": 20.0,
+      "thermal_resistance_factor": 0.1,
+      "heat_dissipation_threshold": 1.0,
+      "hot_spot_threshold": 15.0,
+      "thermal_gradient_threshold": 5.0,
+      "description": "Thermal analysis parameters"
+    },
+    "signal_integrity": {
+      "crosstalk_threshold": 0.01,
+      "reflection_threshold": 0.1,
+      "impedance_mismatch_threshold": 0.2,
+      "signal_quality_threshold": 0.7,
+      "min_track_width": 0.1,
+      "max_track_length": 200.0,
+      "description": "Signal integrity analysis parameters"
+    },
+    "emi_emc": {
+      "radiated_emission_threshold": 40.0,
+      "conducted_emission_threshold": 60.0,
+      "susceptibility_threshold": 10.0,
+      "compliance_margin_threshold": 6.0,
+      "frequency_range": [30.0, 1000.0],
+      "frequency_points": 50,
+      "description": "EMI/EMC analysis parameters"
+    },
+    "noise_analysis": {
+      "thermal_noise_factor": 4.0e-21,
+      "crosstalk_noise_factor": 0.01,
+      "power_supply_noise_factor": 0.001,
+      "ground_noise_factor": 0.0005,
+      "min_snr_threshold": 60.0,
+      "noise_floor": -120.0,
+      "description": "Noise analysis parameters"
+    },
+    "frequency_response": {
+      "min_frequency": 20.0,
+      "max_frequency": 80000.0,
+      "frequency_points": 200,
+      "flatness_threshold": 0.707,
+      "bandwidth_threshold": 0.707,
+      "phase_shift_threshold": 45.0,
+      "high_precision_mode": true,
+      "extended_bandwidth_analysis": true,
+      "description": "Frequency response analysis parameters for high-precision audio up to 80kHz"
+    },
+    "component_analysis": {
+      "power_calculation_factor": 0.8,
+      "temperature_calculation_factor": 0.1,
+      "thermal_resistance_default": 50.0,
+      "max_component_temperature": 85.0,
+      "min_component_spacing": 2.0,
+      "description": "Component analysis parameters"
+    },
+    "board_analysis": {
+      "min_board_area": 100.0,
+      "max_board_area": 10000.0,
+      "layer_thickness_default": 0.035,
+      "copper_resistivity": 1.68e-8,
+      "dielectric_constant": 4.5,
+      "description": "Board analysis parameters"
+    },
+    "validation": {
+      "check_temperature_limits": true,
+      "check_signal_quality": true,
+      "check_emc_compliance": true,
+      "check_noise_limits": true,
+      "check_frequency_response": true,
+      "description": "Analysis validation settings"
+    }
+  }
+} 

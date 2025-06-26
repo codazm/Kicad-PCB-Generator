@@ -1,0 +1,14 @@
+{
+  "pedal_v1": {
+    "max_ground_loop_impedance_mohm": 5,
+    "thd_plus_n_percent": 0.3,
+    "max_trace_length_mm": 120,
+    "temperature_rise_c": 30
+  },
+  "preamp_v1": {
+    "max_ground_loop_impedance_mohm": 3,
+    "thd_plus_n_percent": 0.15,
+    "max_trace_length_mm": 100,
+    "temperature_rise_c": 25
+  }
+} 

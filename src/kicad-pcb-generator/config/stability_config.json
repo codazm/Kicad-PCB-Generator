@@ -1,0 +1,83 @@
+{
+  "stability": {
+    "ferrite_bead": {
+      "default_impedance": 100.0,
+      "default_current_rating": 1.0,
+      "default_dc_resistance": 0.1,
+      "frequency_range": "1MHz-1GHz",
+      "impedance_unit": "Ω",
+      "frequency_reference": "100MHz",
+      "description": "Ferrite bead component parameters"
+    },
+    "emc_filter": {
+      "default_insertion_loss": -40.0,
+      "default_voltage_rating": 250.0,
+      "default_current_rating": 1.0,
+      "temperature_range": "-40°C to +85°C",
+      "description": "EMC filter component parameters"
+    },
+    "power_filter": {
+      "default_cutoff_freq": 1000.0,
+      "default_order": 1,
+      "default_esr": 0.01,
+      "temperature_coefficient": "X7R",
+      "description": "Power filter component parameters"
+    },
+    "audio_filter": {
+      "default_insertion_loss": -0.1,
+      "default_impedance": 600.0,
+      "default_distortion": 0.001,
+      "temperature_range": "-40°C to +85°C",
+      "description": "Audio filter component parameters"
+    },
+    "filter_types": {
+      "low_pass": {
+        "default_cutoff_freq": 1000.0,
+        "default_order": 1,
+        "default_ripple": 0.1,
+        "description": "Low-pass filter parameters"
+      },
+      "high_pass": {
+        "default_cutoff_freq": 20.0,
+        "default_order": 1,
+        "default_ripple": 0.1,
+        "description": "High-pass filter parameters"
+      },
+      "band_pass": {
+        "default_cutoff_freq": 1000.0,
+        "default_order": 2,
+        "default_ripple": 0.1,
+        "default_bandwidth": 100.0,
+        "description": "Band-pass filter parameters"
+      },
+      "notch": {
+        "default_cutoff_freq": 50.0,
+        "default_order": 2,
+        "default_ripple": 0.1,
+        "default_bandwidth": 10.0,
+        "description": "Notch filter parameters"
+      },
+      "emi": {
+        "default_cutoff_freq": 1000000.0,
+        "default_order": 1,
+        "default_attenuation": 40.0,
+        "description": "EMI filter parameters"
+      }
+    },
+    "validation": {
+      "min_impedance": 1.0,
+      "max_impedance": 10000.0,
+      "min_current_rating": 0.001,
+      "max_current_rating": 100.0,
+      "min_voltage_rating": 1.0,
+      "max_voltage_rating": 1000.0,
+      "min_capacitance": 0.001,
+      "max_capacitance": 1000000.0,
+      "min_cutoff_freq": 0.1,
+      "max_cutoff_freq": 1000000000.0,
+      "min_order": 1,
+      "max_order": 10,
+      "description": "Component validation parameters"
+    }
+  }
+} 

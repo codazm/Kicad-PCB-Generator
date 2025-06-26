@@ -1,0 +1,71 @@
+{
+  "audio_routing": {
+    "signal_types": {
+      "audio": {
+        "min_width": 0.3,
+        "min_clearance": 0.3,
+        "max_length": 100.0,
+        "preferred_layer": "F_Cu",
+        "avoid_layers": ["B_Cu"],
+        "require_ground_plane": true,
+        "require_power_plane": true,
+        "description": "Audio signal routing constraints"
+      },
+      "power": {
+        "min_width": 0.5,
+        "min_clearance": 0.3,
+        "max_length": 50.0,
+        "preferred_layer": "In1_Cu",
+        "avoid_layers": ["F_Cu", "B_Cu"],
+        "require_ground_plane": true,
+        "require_power_plane": true,
+        "description": "Power signal routing constraints"
+      },
+      "ground": {
+        "min_width": 0.5,
+        "min_clearance": 0.3,
+        "max_length": 50.0,
+        "preferred_layer": "In2_Cu",
+        "avoid_layers": ["F_Cu", "B_Cu"],
+        "require_ground_plane": true,
+        "require_power_plane": true,
+        "description": "Ground signal routing constraints"
+      },
+      "control": {
+        "min_width": 0.2,
+        "min_clearance": 0.2,
+        "max_length": 200.0,
+        "preferred_layer": "B_Cu",
+        "avoid_layers": ["F_Cu"],
+        "require_ground_plane": false,
+        "require_power_plane": false,
+        "description": "Control signal routing constraints"
+      }
+    },
+    "optimization": {
+      "max_reroute_attempts": 3,
+      "length_tolerance": 0.1,
+      "width_tolerance": 0.05,
+      "clearance_tolerance": 0.05,
+      "description": "Routing optimization parameters"
+    },
+    "validation": {
+      "check_width": true,
+      "check_clearance": true,
+      "check_length": true,
+      "check_layer_placement": true,
+      "check_ground_plane": true,
+      "check_power_plane": true,
+      "description": "Routing validation settings"
+    },
+    "layer_mapping": {
+      "F_Cu": 0,
+      "In1_Cu": 1,
+      "In2_Cu": 2,
+      "In3_Cu": 3,
+      "In4_Cu": 4,
+      "B_Cu": 31,
+      "description": "KiCad layer ID mapping"
+    }
+  }
+} 

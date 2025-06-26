@@ -1,0 +1,76 @@
+{
+  "manufacturing": {
+    "validation": {
+      "min_hole_size": 0.2,
+      "max_hole_size": 6.0,
+      "min_pad_size": 0.4,
+      "max_pad_size": 10.0,
+      "min_silk_width": 0.1,
+      "max_silk_width": 2.0,
+      "description": "Manufacturing validation parameters"
+    },
+    "optimization": {
+      "max_component_spacing": 2.0,
+      "prefer_orthogonal_orientation": true,
+      "max_orientation_angle": 45.0,
+      "min_pad_size": 0.4,
+      "max_via_size": 1.0,
+      "prefer_standard_grid": true,
+      "description": "Manufacturing optimization parameters"
+    },
+    "cost_analysis": {
+      "cost_threshold": 100.0,
+      "yield_impact_threshold": 0.05,
+      "sensitive_area_radius": 5.0,
+      "min_component_spacing": 0.5,
+      "description": "Manufacturing cost analysis parameters"
+    },
+    "panelization": {
+      "panel_size_x": 100.0,
+      "panel_size_y": 100.0,
+      "board_spacing": 2.0,
+      "edge_clearance": 3.0,
+      "fiducial_size": 1.0,
+      "fiducial_clearance": 2.0,
+      "description": "Panelization parameters"
+    },
+    "thermal_management": {
+      "max_temperature_rise": 20.0,
+      "min_thermal_pad_size": 1.0,
+      "thermal_resistance_factor": 0.8,
+      "min_thermal_via_count": 4,
+      "description": "Thermal management parameters"
+    },
+    "quality_control": {
+      "min_test_point_size": 0.8,
+      "min_test_point_clearance": 1.0,
+      "require_fiducials": true,
+      "require_test_points": true,
+      "min_solder_mask_clearance": 0.1,
+      "description": "Quality control parameters"
+    },
+    "validation_settings": {
+      "check_manufacturing": true,
+      "check_manufacturing_optimization": true,
+      "check_cost_analysis": true,
+      "check_panelization": true,
+      "check_thermal_management": true,
+      "check_quality_control": true,
+      "description": "Manufacturing validation settings"
+    },
+    "thresholds": {
+      "warning_severity": 0.3,
+      "error_severity": 0.7,
+      "info_severity": 0.1,
+      "critical_severity": 0.9,
+      "description": "Manufacturing severity thresholds"
+    },
+    "units": {
+      "distance": "mm",
+      "area": "mm²",
+      "cost": "USD",
+      "temperature": "°C",
+      "description": "Manufacturing units"
+    }
+  }
+} 

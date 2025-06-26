@@ -1,0 +1,84 @@
+{
+  "audio_component_overrides": {
+    "resistor": "Device:R_Axial_L9.0mm_D3.0mm_P10.16mm_Horizontal",
+    "capacitor": "Device:CP_Radial_D16.0mm_P7.50mm",
+    "capacitor_electrolytic": "Device:CP_Radial_D16.0mm_P7.50mm",
+    "capacitor_film": "Device:CP_Radial_D16.0mm_P7.50mm",
+    "capacitor_ceramic": "Device:C_0805_2012Metric",
+    "inductor": "Device:L_Radial_D10.0mm_P5.00mm",
+    "diode": "Device:D_THT_D5.0mm_W2.5mm_P2.54mm",
+    "led": "LED:LED_D5.0mm",
+    "opamp": "Package_DIP:DIP-8_W7.62mm",
+    "opamp_dual": "Package_DIP:DIP-8_W7.62mm",
+    "opamp_quad": "Package_DIP:DIP-14_W7.62mm",
+    "transistor": "Package_TO_SOT_THT:TO-92_Inline",
+    "bjt": "Package_TO_SOT_THT:TO-92_Inline",
+    "jfet": "Package_TO_SOT_THT:TO-92_Inline",
+    "mosfet": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "potentiometer": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal",
+    "potentiometer_16mm": "Potentiometer_THT:Potentiometer_Alps_RK16K_Single_Horizontal",
+    "potentiometer_24mm": "Potentiometer_THT:Potentiometer_Alps_RK24K_Single_Horizontal",
+    "switch": "Button_Switch_THT:SW_SPST_SKQG_WithThreadedTerminal",
+    "jack": "Connector_Audio:Jack_3.5mm_Stereo",
+    "jack_6.35mm": "Connector_Audio:Jack_6.35mm_Jack",
+    "xlr": "Connector_Audio:XLR-3_Male",
+    "speaker": "Audio:Speaker_Pioneer_G-25MC",
+    "ferrite_bead": "Inductor_THT:L_Axial_L12.0mm_D5.0mm_P15.00mm_Horizontal",
+    "crystal": "Crystal:Crystal_HC49-U_Vertical",
+    "oscillator": "Crystal:Crystal_HC49-U_Vertical",
+    "relay": "Relay_THT:Relay_SPDT_Schrack-RT1-FormA_RM5mm",
+    "transformer": "Transformer_THT:Transformer_EI30-15_Vertical",
+    "tube": "Package_THT:Socket_9-Pin_Octal",
+    "triode": "Package_THT:Socket_9-Pin_Octal",
+    "pentode": "Package_THT:Socket_9-Pin_Octal",
+    "timer": "Package_DIP:DIP-8_W7.62mm",
+    "regulator": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "dac": "Package_DIP:DIP-8_W7.62mm",
+    "adc": "Package_DIP:DIP-8_W7.62mm",
+    "vco": "Package_DIP:DIP-16_W7.62mm",
+    "vcf": "Package_DIP:DIP-16_W7.62mm",
+    "vca": "Package_DIP:DIP-8_W7.62mm",
+    "logic": "Package_DIP:DIP-14_W7.62mm",
+    "flipflop": "Package_DIP:DIP-14_W7.62mm",
+    "counter": "Package_DIP:DIP-16_W7.62mm",
+    "shift_register": "Package_DIP:DIP-16_W7.62mm",
+    "mounting_hole": "MountingHole:MountingHole_3.2mm_M3",
+    "standoff": "MountingHole:MountingHole_3.2mm_M3"
+  },
+  "component_packages": {
+    "transistor": {
+      "to92": "Package_TO_SOT_THT:TO-92_Inline",
+      "to220": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "sot23": "Package_TO_SOT_SMD:SOT-23",
+      "sot223": "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+    },
+    "capacitor": {
+      "electrolytic": "Device:CP_Radial_D16.0mm_P7.50mm",
+      "ceramic": "Device:C_0805_2012Metric",
+      "film": "Device:CP_Radial_D16.0mm_P7.50mm",
+      "tantalum": "Device:C_1206_3216Metric"
+    },
+    "resistor": {
+      "axial": "Device:R_Axial_L9.0mm_D3.0mm_P10.16mm_Horizontal",
+      "0805": "Device:R_0805_2012Metric",
+      "1206": "Device:R_1206_3216Metric"
+    },
+    "potentiometer": {
+      "9mm": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal",
+      "16mm": "Potentiometer_THT:Potentiometer_Alps_RK16K_Single_Horizontal",
+      "24mm": "Potentiometer_THT:Potentiometer_Alps_RK24K_Single_Horizontal"
+    },
+    "jack": {
+      "3.5mm": "Connector_Audio:Jack_3.5mm_Stereo",
+      "6.35mm": "Connector_Audio:Jack_6.35mm_Jack",
+      "xlr": "Connector_Audio:XLR-3_Male"
+    }
+  },
+  "audio_specific_rules": {
+    "prefer_through_hole": true,
+    "audio_ground_star": true,
+    "separate_analog_digital_grounds": true,
+    "low_noise_placement": true,
+    "emc_filtering": true
+  }
+} 

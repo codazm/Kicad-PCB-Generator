@@ -1,0 +1,127 @@
+{
+  "signal_paths": {
+    "audio": {
+      "min_width": 0.3,
+      "min_clearance": 0.5,
+      "max_length": 50.0,
+      "require_ground_plane": true,
+      "require_shielding": true,
+      "require_impedance_control": true,
+      "target_impedance": 600.0
+    },
+    "power": {
+      "min_width": 0.5,
+      "min_clearance": 0.8,
+      "max_length": 100.0,
+      "require_ground_plane": true,
+      "require_shielding": false,
+      "require_impedance_control": false
+    },
+    "digital": {
+      "min_width": 0.2,
+      "min_clearance": 0.3,
+      "max_length": 200.0,
+      "require_ground_plane": true,
+      "require_shielding": false,
+      "require_impedance_control": false
+    },
+    "control": {
+      "min_width": 0.2,
+      "min_clearance": 0.3,
+      "max_length": 100.0,
+      "require_ground_plane": true,
+      "require_shielding": false,
+      "require_impedance_control": false
+    }
+  },
+  "power_supplies": {
+    "analog": {
+      "voltage": 15.0,
+      "max_current": 1.0,
+      "min_track_width": 0.5,
+      "min_clearance": 0.8,
+      "require_star_grounding": true,
+      "require_decoupling": true,
+      "decoupling_capacitors": [
+        {
+          "value": "100n",
+          "package": "C_0805_2012Metric",
+          "placement": "near_ic"
+        },
+        {
+          "value": "10u",
+          "package": "C_1206_3216Metric",
+          "placement": "near_ic"
+        }
+      ]
+    },
+    "digital": {
+      "voltage": 5.0,
+      "max_current": 0.5,
+      "min_track_width": 0.3,
+      "min_clearance": 0.5,
+      "require_star_grounding": true,
+      "require_decoupling": true,
+      "decoupling_capacitors": [
+        {
+          "value": "100n",
+          "package": "C_0805_2012Metric",
+          "placement": "near_ic"
+        },
+        {
+          "value": "10u",
+          "package": "C_1206_3216Metric",
+          "placement": "near_ic"
+        }
+      ]
+    }
+  },
+  "grounding": {
+    "strategy": "hybrid",
+    "min_plane_width": 0.5,
+    "require_isolation": true,
+    "isolation_gap": 0.5,
+    "require_ferrite_beads": true,
+    "ferrite_bead_placement": [
+      {
+        "value": "600R",
+        "package": "L_0805_2012Metric",
+        "placement": "power_entry"
+      },
+      {
+        "value": "600R",
+        "package": "L_0805_2012Metric",
+        "placement": "digital_analog_boundary"
+      }
+    ]
+  },
+  "component_placement": {
+    "input_stage": {
+      "min_distance": 5.0,
+      "preferred_side": "left",
+      "require_shielding": true
+    },
+    "output_stage": {
+      "min_distance": 5.0,
+      "preferred_side": "right",
+      "require_shielding": true
+    },
+    "power_supply": {
+      "min_distance": 10.0,
+      "preferred_side": "top",
+      "require_shielding": true
+    },
+    "digital_section": {
+      "min_distance": 15.0,
+      "preferred_side": "bottom",
+      "require_shielding": false
+    }
+  },
+  "noise_floor": {
+    "analog_input": -120,
+    "analog_output": -100,
+    "digital_section": -80,
+    "power_supply": -90,
+    "ground_plane": -130
+  }
+} 
