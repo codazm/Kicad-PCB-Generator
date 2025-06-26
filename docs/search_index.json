@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "index": [
+    {
+      "title": "User Guide",
+      "path": "user/user_guide.md",
+      "keywords": ["guide", "manual", "tutorial", "how to", "usage", "getting started"],
+      "sections": [
+        {
+          "title": "Getting Started",
+          "keywords": ["installation", "setup", "requirements", "first launch"],
+          "path": "user/user_guide.md#getting-started"
+        },
+        {
+          "title": "Basic Concepts",
+          "keywords": ["concepts", "terminology", "basics", "fundamentals"],
+          "path": "user/user_guide.md#basic-concepts"
+        },
+        {
+          "title": "Creating Your First Project",
+          "keywords": ["project", "new", "create", "template"],
+          "path": "user/user_guide.md#creating-your-first-project"
+        },
+        {
+          "title": "Working with Components",
+          "keywords": ["components", "parts", "library", "footprint"],
+          "path": "user/user_guide.md#working-with-components"
+        },
+        {
+          "title": "PCB Layout",
+          "keywords": ["layout", "placement", "routing", "traces"],
+          "path": "user/user_guide.md#pcb-layout"
+        },
+        {
+          "title": "Validation and Testing",
+          "keywords": ["validation", "testing", "drc", "erc"],
+          "path": "user/user_guide.md#validation-and-testing"
+        },
+        {
+          "title": "Exporting and Manufacturing",
+          "keywords": ["export", "manufacturing", "gerber", "bom"],
+          "path": "user/user_guide.md#exporting-and-manufacturing"
+        },
+        {
+          "title": "Troubleshooting",
+          "keywords": ["troubleshooting", "problems", "issues", "errors"],
+          "path": "user/user_guide.md#troubleshooting"
+        }
+      ]
+    },
+    {
+      "title": "FAQ",
+      "path": "user/faq.md",
+      "keywords": ["faq", "questions", "answers", "help", "troubleshooting"],
+      "sections": [
+        {
+          "title": "Installation",
+          "keywords": ["install", "setup", "python", "kicad"],
+          "path": "user/faq.md#installation"
+        },
+        {
+          "title": "Usage",
+          "keywords": ["usage", "how to", "guide", "tutorial"],
+          "path": "user/faq.md#usage"
+        },
+        {
+          "title": "Components",
+          "keywords": ["components", "parts", "library", "footprint"],
+          "path": "user/faq.md#components"
+        },
+        {
+          "title": "PCB Design",
+          "keywords": ["design", "layout", "routing", "traces"],
+          "path": "user/faq.md#pcb-design"
+        },
+        {
+          "title": "Manufacturing",
+          "keywords": ["manufacturing", "gerber", "bom", "assembly"],
+          "path": "user/faq.md#manufacturing"
+        },
+        {
+          "title": "Troubleshooting",
+          "keywords": ["troubleshooting", "problems", "issues", "errors"],
+          "path": "user/faq.md#troubleshooting"
+        },
+        {
+          "title": "Support",
+          "keywords": ["support", "help", "community", "discord"],
+          "path": "user/faq.md#support"
+        },
+        {
+          "title": "Advanced Topics",
+          "keywords": ["advanced", "custom", "automation", "optimization"],
+          "path": "user/faq.md#advanced-topics"
+        }
+      ]
+    },
+    {
+      "title": "Best Practices",
+      "path": "guides/best_practices.md",
+      "keywords": ["best practices", "guidelines", "recommendations", "tips"],
+      "sections": [
+        {
+          "title": "Project Setup",
+          "keywords": ["project", "setup", "configuration", "organization"],
+          "path": "guides/best_practices.md#project-setup"
+        },
+        {
+          "title": "Component Selection",
+          "keywords": ["components", "selection", "parts", "specifications"],
+          "path": "guides/best_practices.md#component-selection"
+        },
+        {
+          "title": "PCB Layout",
+          "keywords": ["layout", "placement", "routing", "traces"],
+          "path": "guides/best_practices.md#pcb-layout"
+        },
+        {
+          "title": "Signal Integrity",
+          "keywords": ["signal", "integrity", "noise", "interference"],
+          "path": "guides/best_practices.md#signal-integrity"
+        },
+        {
+          "title": "Manufacturing",
+          "keywords": ["manufacturing", "production", "assembly", "testing"],
+          "path": "guides/best_practices.md#manufacturing"
+        }
+      ]
+    },
+    {
+      "title": "Audio Design Guide",
+      "path": "reference/audio_design_guide.md",
+      "keywords": ["audio", "design", "circuit", "sound"],
+      "sections": [
+        {
+          "title": "Audio Components",
+          "keywords": ["components", "parts", "audio", "circuit"],
+          "path": "reference/audio_design_guide.md#audio-components"
+        },
+        {
+          "title": "Circuit Design",
+          "keywords": ["circuit", "design", "schematic", "layout"],
+          "path": "reference/audio_design_guide.md#circuit-design"
+        },
+        {
+          "title": "Signal Processing",
+          "keywords": ["signal", "processing", "audio", "quality"],
+          "path": "reference/audio_design_guide.md#signal-processing"
+        },
+        {
+          "title": "Noise Reduction",
+          "keywords": ["noise", "reduction", "interference", "quality"],
+          "path": "reference/audio_design_guide.md#noise-reduction"
+        }
+      ]
+    }
+  ]
+} 

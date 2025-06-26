@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiCad PCB Generator Documentation Search</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .search-container {
+            margin: 20px 0;
+        }
+        #search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .result-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        .result-item:hover {
+            background-color: #f5f5f5;
+        }
+        .result-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .result-path {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .result-keywords {
+            color: #95a5a6;
+            font-size: 0.8em;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>KiCad PCB Generator Documentation Search</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search documentation...">
+    </div>
+    <div id="results"></div>
+
+    <script>
+        let searchIndex = null;
+
+        // Load search index
+        fetch('search_index.json')
+            .then(response => response.json())
+            .then(data => {
+                searchIndex = data;
+            })
+            .catch(error => console.error('Error loading search index:', error));
+
+        // Search function
+        function search(query) {
+            if (!searchIndex) return;
+
+            query = query.toLowerCase();
+            const results = [];
+
+            searchIndex.index.forEach(doc => {
+                // Search in document title and keywords
+                if (doc.title.toLowerCase().includes(query) ||
+                    doc.keywords.some(k => k.toLowerCase().includes(query))) {
+                    results.push({
+                        title: doc.title,
+                        path: doc.path,
+                        keywords: doc.keywords,
+                        type: 'document'
+                    });
+                }
+
+                // Search in sections
+                doc.sections.forEach(section => {
+                    if (section.title.toLowerCase().includes(query) ||
+                        section.keywords.some(k => k.toLowerCase().includes(query))) {
+                        results.push({
+                            title: section.title,
+                            path: section.path,
+                            keywords: section.keywords,
+                            type: 'section',
+                            parent: doc.title
+                        });
+                    }
+                });
+            });
+
+            displayResults(results, query);
+        }
+
+        // Display results
+        function displayResults(results, query) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<p>No results found.</p>';
+                return;
+            }
+
+            results.forEach(result => {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'result-item';
+
+                const title = document.createElement('div');
+                title.className = 'result-title';
+                title.innerHTML = highlightText(result.title, query);
+                resultDiv.appendChild(title);
+
+                const path = document.createElement('div');
+                path.className = 'result-path';
+                path.textContent = result.type === 'section' ? 
+                    `${result.parent} > ${result.path}` : result.path;
+                resultDiv.appendChild(path);
+
+                const keywords = document.createElement('div');
+                keywords.className = 'result-keywords';
+                keywords.textContent = result.keywords.join(', ');
+                resultDiv.appendChild(keywords);
+
+                resultDiv.addEventListener('click', () => {
+                    window.location.href = result.path;
+                });
+
+                resultsDiv.appendChild(resultDiv);
+            });
+        }
+
+        // Highlight matching text
+        function highlightText(text, query) {
+            if (!query) return text;
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        }
+
+        // Add search input handler
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            search(e.target.value);
+        });
+    </script>
+</body>
+</html> 
