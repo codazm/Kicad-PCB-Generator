@@ -1,0 +1,108 @@
+{
+  "advanced_drc": {
+    "track_width": {
+      "min_signal_track_width": 0.15,
+      "min_power_track_width": 0.5,
+      "min_high_speed_track_width": 0.2,
+      "max_track_width": 5.0,
+      "default_track_width": 0.25,
+      "description": "Track width validation parameters"
+    },
+    "clearance": {
+      "min_clearance": 0.2,
+      "min_power_clearance": 0.5,
+      "min_high_voltage_clearance": 1.0,
+      "min_audio_clearance": 0.3,
+      "min_thermal_clearance": 0.5,
+      "description": "Clearance validation parameters"
+    },
+    "component_placement": {
+      "min_component_spacing": 0.5,
+      "min_edge_distance": 1.0,
+      "max_component_density": 0.1,
+      "prefer_orthogonal_orientation": true,
+      "max_orientation_angle": 90,
+      "description": "Component placement validation parameters"
+    },
+    "routing": {
+      "max_track_length": 200.0,
+      "max_via_count": 100,
+      "min_via_size": 0.4,
+      "max_via_size": 2.0,
+      "prefer_direct_routes": true,
+      "max_parallel_length": 50.0,
+      "description": "Routing validation parameters"
+    },
+    "power": {
+      "min_power_plane_coverage": 0.8,
+      "max_voltage_drop": 0.1,
+      "min_power_track_width": 0.5,
+      "max_current_density": 10.0,
+      "power_net_prefixes": ["VCC", "VDD", "VSS", "GND"],
+      "description": "Power validation parameters"
+    },
+    "ground": {
+      "min_ground_coverage": 0.7,
+      "max_ground_loop_area": 100.0,
+      "min_ground_connection_count": 4,
+      "prefer_star_grounding": true,
+      "description": "Ground validation parameters"
+    },
+    "signal": {
+      "max_impedance_mismatch": 0.1,
+      "max_crosstalk": 0.01,
+      "max_reflection": 0.1,
+      "min_signal_integrity": 0.8,
+      "high_speed_keywords": ["CLK", "DDR", "USB", "HDMI"],
+      "description": "Signal validation parameters"
+    },
+    "audio": {
+      "min_snr": 60.0,
+      "max_noise_floor": -80.0,
+      "max_distortion": 0.01,
+      "min_bandwidth": 20.0,
+      "max_bandwidth": 20000.0,
+      "min_impedance": 100.0,
+      "max_impedance": 10000.0,
+      "description": "Audio validation parameters"
+    },
+    "thermal": {
+      "max_temperature_rise": 20.0,
+      "min_thermal_pad_size": 2.0,
+      "max_component_density": 0.1,
+      "thermal_resistance_factor": 0.1,
+      "min_thermal_via_count": 4,
+      "description": "Thermal validation parameters"
+    },
+    "validation": {
+      "check_track_width": true,
+      "check_clearance": true,
+      "check_component_placement": true,
+      "check_routing": true,
+      "check_power": true,
+      "check_ground": true,
+      "check_signal": true,
+      "check_audio": true,
+      "check_thermal": true,
+      "description": "DRC validation settings"
+    },
+    "thresholds": {
+      "warning_severity": 0.7,
+      "error_severity": 0.9,
+      "info_severity": 0.3,
+      "critical_severity": 0.95,
+      "description": "DRC severity thresholds"
+    },
+    "units": {
+      "distance": "mm",
+      "area": "mm²",
+      "voltage": "volts",
+      "current": "amperes",
+      "power": "watts",
+      "temperature": "celsius",
+      "impedance": "ohms",
+      "frequency": "hertz",
+      "description": "DRC units"
+    }
+  }
+} 
